@@ -24,6 +24,45 @@ body {
   font-family: sans-serif; 
 }
 
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: radial-gradient(ellipse at center, #ffffff00 0%, #12001e 100%);
+  opacity: 1;
+  z-index: -1;
+}
+
+.background::after {
+  content:"";
+  position: absolute;
+  width:200vw;
+  height: 200vh;
+  left: -50%;
+  top: -50%;
+  opacity: 0.4;
+  background-image: url(./assets/img/pattern.png);
+}
+
+.background::after {
+  animation:grain 15s steps(10) infinite;
+}
+
+  @keyframes grain {
+  0%, 100% { transform:translate(0, 0) }
+  10% { transform:translate(-5%, -10%) }
+  20% { transform:translate(-15%, 5%) }
+  30% { transform:translate(7%, -25%) }
+  40% { transform:translate(-5%, 25%) }
+  50% { transform:translate(-15%, 10%) }
+  60% { transform:translate(15%, 0%) }
+  70% { transform:translate(0%, 15%) }
+  80% { transform:translate(3%, 35%) }
+  90% { transform:translate(-10%, 10%) }
+}
 
 
 #container {

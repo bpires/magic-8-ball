@@ -91,6 +91,9 @@ input {
   padding: 20px;
   border-radius: 4px;
   font: 400 20px Oswald;
+  background-color: rgba(35, 8, 69, 0.363);
+  border: none;
+  color: rgb(168, 97, 255);
 }
 
 button {
@@ -99,21 +102,26 @@ button {
   padding: 20px;
   border-radius: 4px;
   font: 400 20px Oswald;
+  opacity: 0.8;
 }
 
 input {
   margin-bottom: 80px;
+  caret-color: rgb(168, 97, 255);
+}
+
+input:focus {
+  outline: none;
 }
 
 button {
   border: none;
-  background-color: rgb(85, 8, 158);
-  color: white;
-  transition: filter .2s;
+  background-color: rgba(32, 7, 64, 0.892);
+  color: rgb(175, 115, 249);
 }
 
 button:hover {
-  filter: brightness(1.15);
+  filter: brightness(280%);
   cursor: pointer;
 }
 
@@ -141,9 +149,9 @@ button:hover {
   width: 0px;
   height: 0px;  
   border-radius: 50%;
-  color: rgb(98, 10, 222);
-  box-shadow: 0 0 150px 50px;
-  animation: glow 1s linear infinite alternate;
+  color: rgb(100, 12, 223);
+  box-shadow: 0 0 150px 65px;
+  animation: glow 1.2s linear infinite alternate;
 }
 
 @keyframes glow {
@@ -173,7 +181,7 @@ button:hover {
 }
 
 #answer {
-  font: 400 16px Oswald;
+  font: 400 18px Oswald;
   text-align: center;
   line-height: 1.1;
   -webkit-transform: translate(150%, 0%) rotate(15deg);
@@ -188,8 +196,8 @@ button:hover {
 #answer.show {
   opacity: 1;
   color: rgba(240,220,240,0.8);
-  -webkit-transform:  translate(155%, 0%) rotate(0deg);
-  transform:  translate(155%, 0%) rotate(0deg);
+  -webkit-transform:  translate(156%, 0%) rotate(0deg);
+  transform:  translate(156%, 0%) rotate(0deg);
   transition: ease-in all 0.2s;
   z-index: 2;
   position: fixed;

@@ -22,6 +22,7 @@ body {
   color: white;
   text-align: center;
   font-family: sans-serif; 
+  font: 600 22px Oswald;
 }
 
 .background {
@@ -33,7 +34,7 @@ body {
   overflow: hidden;
   background: radial-gradient(ellipse at center, #ffffff00 45%, #000000 75%);
   opacity: 1;
-  z-index: -1;
+  z-index: -5;
 }
 
 .background::after {
@@ -81,22 +82,23 @@ h1 {
 p {
   margin-bottom: 40px;
   opacity: 0.7;
+  font: 400 18px Oswald;
 }
 
 input {
   display: inline-block;
   width: 70%;
   padding: 20px;
-  font-size: 20px;
   border-radius: 4px;
+  font: 400 20px Oswald;
 }
 
 button {
   display: inline-block;
   width: 20%;
   padding: 20px;
-  font-size: 20px;
   border-radius: 4px;
+  font: 400 20px Oswald;
 }
 
 input {
@@ -115,24 +117,23 @@ button:hover {
   cursor: pointer;
 }
 
-
-#answer {
-  margin-top: 40px;
-  transition: opacity 1.8s;
+#askButton, #inputQuestion {
+  opacity: 1;
+  transition: opacity 1.5s;
 }
 
-#answer div {
-  font-size: 16px;
-  font-weight: normal;
-  opacity: 0.9;
-  margin-bottom: 10px;
+#askButton.hide, #inputQuestion.hide {
+  opacity: 0;
+  transition: opacity 0.4s;
 }
 
 .center {
   position: absolute;
   margin: auto;
-  top: 0; bottom: 0;
-  left: 0; right: 0;
+  top: 0; 
+  bottom: 0;
+  left: 0; 
+  right: 0;
 }
 
 .glow {
@@ -142,7 +143,7 @@ button:hover {
   border-radius: 50%;
   color: rgb(98, 10, 222);
   box-shadow: 0 0 150px 50px;
-  animation: glow 1.2s linear infinite alternate;
+  animation: glow 1s linear infinite alternate;
 }
 
 @keyframes glow {
@@ -150,3 +151,47 @@ button:hover {
     box-shadow: 0 0 120px 50px;
   }
 }
+
+#triangle {
+  -webkit-transform: translateY(-10%) rotate(15deg);
+  transform: translateY(-10%) rotate(15deg);
+	width: 0px; 
+	height: 0px;
+	border-left: 110px solid transparent;
+	border-right: 110px solid transparent;
+	border-top: 180px solid rgba(60,10,120,0.0);
+  opacity: 0;
+  transition: ease-in all 0.21s;
+}
+
+#triangle.show {
+  border-top: 180px solid rgba(60,10,120,0.9);
+  -webkit-transform: translateY(-10%) rotate(0deg);
+  transform: translateY(-10%) rotate(0deg);
+  opacity: 1;
+  transition: ease-in all 0.21s;
+}
+
+#answer {
+  font: 400 16px Oswald;
+  text-align: center;
+  line-height: 1.1;
+  -webkit-transform: translate(150%, 0%) rotate(15deg);
+  transform: translate(150%, 0%)  rotate(15deg);
+  text-transform: uppercase;
+	width: 96px; 
+	height: 100px;
+  opacity: 0;
+  transition: ease-in all 0.2s;
+}
+
+#answer.show {
+  opacity: 1;
+  color: rgba(240,220,240,0.8);
+  -webkit-transform:  translate(155%, 0%) rotate(0deg);
+  transform:  translate(155%, 0%) rotate(0deg);
+  transition: ease-in all 0.2s;
+  z-index: 2;
+  position: fixed;
+}
+ 

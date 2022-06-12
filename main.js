@@ -1,6 +1,7 @@
 const answer = document.querySelector("#answer")
 const inputQuestion = document.querySelector("#inputQuestion")
 const askButton = document.querySelector('#askButton')
+const triangle = document.querySelector('#triangle')
 const answers = [
     "It is certain.",
     "It is decidedly so.",
@@ -31,14 +32,22 @@ function ask() {
     return
   }
 
+  askButton.classList.add('hide')
   askButton.setAttribute("disabled", true)
+  inputQuestion.classList.add('hide')
 
   answer.innerHTML = answers[Math.floor(Math.random() * answers.length)]
-
-  answer.style.opacity = 1;
+  
+  answer.classList.add('show')
+  triangle.classList.add('show')
+  // answer.style.opacity = 1;
 
   setTimeout(function() {
-    answer.style.opacity = 0;
+    // answer.style.opacity = 0;
+    askButton.classList.remove('hide')
     askButton.removeAttribute("disabled")
+    inputQuestion.classList.remove('hide')
+    triangle.classList.remove('show')
+    answer.classList.remove('show')
   }, 2000)
 }

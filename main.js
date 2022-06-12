@@ -33,17 +33,12 @@ function ask() {
 
   askButton.setAttribute("disabled", true)
 
-  const question = "<div>" + inputQuestion.value + "</div>"
-
-  const  answersTotal = answers.length
-  const randomNumber = Math.floor(Math.random() * answersTotal)
-
-  answer.innerHTML = question + answers[randomNumber]
+  answer.innerHTML = answers[Math.floor(Math.random() * answers.length)]
 
   answer.style.opacity = 1;
 
   setTimeout(function() {
     answer.style.opacity = 0;
     askButton.removeAttribute("disabled")
-  }, 3200)
+  }, 2000)
 }

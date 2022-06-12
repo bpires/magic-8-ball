@@ -12,6 +12,12 @@ a {
 }
 
 body {
+  background-image: url(./assets/img/main.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  
   background-color: black;
   color: white;
   text-align: center;
@@ -74,3 +80,6 @@ button:hover {
   opacity: 0.9;
   margin-bottom: 10px;
 }
+
+
+

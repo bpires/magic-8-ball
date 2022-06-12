@@ -24,6 +24,8 @@ body {
   font-family: sans-serif; 
 }
 
+
+
 #container {
   margin-top: 100px;
   width: 80%;
@@ -62,7 +64,7 @@ button {
   transition: filter .2s;
 }
 
-/* pseudo-class :hover */
+
 button:hover {
   filter: brightness(1.2);
   cursor: pointer;
@@ -81,5 +83,25 @@ button:hover {
   margin-bottom: 10px;
 }
 
+.center {
+  position: absolute;
+  margin: auto;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+}
 
+.glow {
+  top: -100px;
+  width: 0px;
+  height: 0px;  
+  border-radius: 50%;
+  color: rgb(92, 30, 180);
+  box-shadow: 0 0 150px 50px;
+  animation: glow 1.2s linear infinite alternate;
+}
 
+@keyframes glow {
+  to{
+    box-shadow: 0 0 120px 50px;
+  }
+}

@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="[https://github.com/othneildrew/Best-README-Template](https://bpires.github.io/magic-8-ball/)" target="_blank"><img src="./assets/img/sample.png" /></a>
+  <a href="[https://github.com/othneildrew/Best-README-Template](https://bpires.github.io/magic-8-ball/)" target="_blank"><img src="./assets/img/demo.png" /></a>
 </p>
 <br>
 

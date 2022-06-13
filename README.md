@@ -84,6 +84,8 @@ Icons were outsourced from [Font Awesome](https://fontawesome.com/).
 * [x] Animations
 * [x] Ambient sound
 * [ ] Mobile compatibility  
+* [ ] Trick autoplay
+* [ ] Enhance animations 
   
 <br>
 <p align="right"><a href="#top">back to top</a></p>  

@@ -61,8 +61,8 @@ function ask() {
 let a=1;
 let b=0;
 
-askButton.addEventListener("mouseenter", function() {
-  if(b==0) {
+askButton.addEventListener("click", function() {
+  if(a == 1 && b == 0) {
     audio.play()
     b++
     a--
@@ -71,7 +71,7 @@ askButton.addEventListener("mouseenter", function() {
 
 
 control.addEventListener("click", function() {
-  if(a==0) {
+  if(a == 0) {
     audio.pause()
     a++
     control.style.opacity="0.6"

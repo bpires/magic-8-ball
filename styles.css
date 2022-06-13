@@ -156,7 +156,7 @@ button:hover {
 
 @keyframes glow {
   to{
-    box-shadow: 0 0 120px 50px;
+    box-shadow: 0 0 100px 50px;
   }
 }
 
@@ -202,4 +202,36 @@ button:hover {
   z-index: 2;
   position: fixed;
 }
- 
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 20px;
+  font: 200 22px Oswald;
+  color: rgb(81, 15, 202);
+  text-align: center;
+}
+
+footer:hover {
+  filter: brightness(130%);
+  cursor: pointer;
+}
+
+footer img{
+  max-height: 25px;
+}
+
+.sound {
+  color:rgb(58, 7, 135);
+  opacity:1;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+}
+
+.sound i:hover {
+  filter: brightness(120%);
+  cursor: pointer;
+}

@@ -2,6 +2,8 @@ const answer = document.querySelector("#answer")
 const inputQuestion = document.querySelector("#inputQuestion")
 const askButton = document.querySelector('#askButton')
 const triangle = document.querySelector('#triangle')
+const control = document.querySelector('#control')
+const audio = document.querySelector('#audio')
 const answers = [
     "It is certain",
     "It is decidedly so",
@@ -52,3 +54,17 @@ function ask() {
     inputQuestion.value = ""
   }, 2000)
 }
+
+let a=0;
+
+control.addEventListener("click", function() {
+  if(a==0){
+    audio.pause();
+    a++;
+    control.style.opacity="0.6";
+  }else{
+    audio.play();
+    a--;
+    control.style.opacity="1";
+  }
+ });

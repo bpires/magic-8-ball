@@ -71,7 +71,7 @@ The background illustration was remixed from the design of Noah Jacobus ([So You
   
 A noise Texture from [PNGKIT](https://www.pngkit.com/downpic/u2w7r5u2t4e6y3a9_24-jun-2015-noise-texture-png-transparent/) was used to create an animated grainy texture based on [CSS-TRICKS](https://css-tricks.com/snippets/css/animated-grainy-texture/) & [Red Stapler](https://redstapler.co/css-film-grain-effect/) tutorials.
 
-The dice animations were based on the [CSS Magic 8-Ball Codepen](https://codepen.io/rockhill/pen/vYdawJ) by J. James Rockhill.
+The dice animations were based on the [CSS Magic 8-Ball Codepen](https://codepen.io/rockhill/pen/vYdawJ) by J. James Rockhill and [Pure CSS Magic 8-ball](https://codepen.io/finnhvman/pen/wrLPJz) by Bence Szabo.
 
 The soundtrack is an [Audacity](https://www.audacityteam.org/)-modified loop of the sample [Gloomy Eerie Horror Piano Loop](https://samplefocus.com/samples/gloomy-eerie-horror-piano-loop), by bedsheetboy.
 

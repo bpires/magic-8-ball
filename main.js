@@ -30,7 +30,11 @@ const answers = [
 function ask() {
 
   if(inputQuestion.value == "") {
-    alert("Type your question.")
+    inputQuestion.placeholder='Type your question!'
+    inputQuestion.classList.add('error')
+    setTimeout(function() {
+      inputQuestion.classList.remove('error')
+    }, 500)
     return
   }
 
@@ -42,16 +46,15 @@ function ask() {
   
   answer.classList.add('show')
   triangle.classList.add('show')
-  // answer.style.opacity = 1;
 
   setTimeout(function() {
-    // answer.style.opacity = 0;
     askButton.classList.remove('hide')
     askButton.removeAttribute("disabled")
     inputQuestion.classList.remove('hide')
     triangle.classList.remove('show')
     answer.classList.remove('show')
     inputQuestion.value = ""
+    inputQuestion.placeholder='Ask me anything...'
   }, 2000)
 }
 

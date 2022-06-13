@@ -78,6 +78,7 @@ control.addEventListener("click", function() {
   } else {
     audio.play();
     a--
+    b++
     control.style.opacity="1"
   }
  });

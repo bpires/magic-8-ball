@@ -34,7 +34,7 @@ function ask() {
     inputQuestion.classList.add('error')
     setTimeout(function() {
       inputQuestion.classList.remove('error')
-    }, 500)
+    }, 750)
     return
   }
 
@@ -58,16 +58,26 @@ function ask() {
   }, 2000)
 }
 
-let a=0;
+let a=1;
+let b=0;
+
+askButton.addEventListener("mouseenter", function() {
+  if(b==0) {
+    audio.play()
+    b++
+    a--
+  } return
+ });
+
 
 control.addEventListener("click", function() {
-  if(a==0){
-    audio.pause();
-    a++;
-    control.style.opacity="0.6";
-  }else{
+  if(a==0) {
+    audio.pause()
+    a++
+    control.style.opacity="0.6"
+  } else {
     audio.play();
-    a--;
-    control.style.opacity="1";
+    a--
+    control.style.opacity="1"
   }
  });

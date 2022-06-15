@@ -43,7 +43,7 @@ Trust the magic 8-ball
 
 
 <br>
-<p align="right"><a href="#top">back to top</a></p>  
+<p align="right"><sub><a href="#top">back to top</a></sub></p> 
   
 
 ## Context 
@@ -63,7 +63,7 @@ The product was later rebranded as a toy and is still available today, being con
 📺 **You can check the whole story behind it in this fun short video: ["Uncovering the Mystery of the Magic 8 Ball"](https://www.youtube.com/watch?v=vZRrg6Nl-1E) by Great Big Story**
 
 <br>
-<p align="right"><a href="#top">back to top</a></p>  
+<p align="right"><sub><a href="#top">back to top</a></sub></p> 
 
 ## Assets
 
@@ -78,24 +78,19 @@ The soundtrack is an [Audacity](https://www.audacityteam.org/)-modified loop of 
 Icons were outsourced from [Font Awesome](https://fontawesome.com/).
 
 <br>
-<p align="right"><a href="#top">back to top</a></p>  
+<p align="right"><sub><a href="#top">back to top</a></sub></p> 
   
 ## Features
 * [x] Animations
 * [x] Ambient sound
 * [ ] Mobile compatibility  
 * [ ] Enhance animations 
+ 
+#### Known bugs
+* [ ] Fix text positioning and make design responsive (See issue [#1](./../../issues/1))
   
 <br>
-<p align="right"><a href="#top">back to top</a></p>  
-  
-    
-## Known bugs
-* [ ] Fix text positioning
-* [ ] Make design responsive
-  
-<br>
-<p align="right"><a href="#top">back to top</a></p>  
+<p align="right"><sub><a href="#top">back to top</a></sub></p> 
   
   
 ## Stacks
@@ -105,7 +100,7 @@ Only plain Javascript was used on this project, along with HTML & CSS.
 ![Stacks](https://skillicons.dev/icons?i=html,css,js&theme=light)
 
 <br>
-<p align="right"><a href="#top">back to top</a></p>  
+<p align="right"><sub><a href="#top">back to top</a></sub></p> 
   
 ## Contributing
 
@@ -132,7 +127,7 @@ If you have a suggestion that would make this project better, feel free to fork 
 > In GitHub social etiquette, starring a repo is not only way to bookmark a project but also to express **how much you appreciated and found it interesting!**
 
 <br>
-<p align="right"><a href="#top">back to top</a></p>  
+<p align="right"><sub><a href="#top">back to top</a></sub></p> 
 
   
 ## About me
@@ -174,7 +169,7 @@ If you have a suggestion that would make this project better, feel free to fork 
 </div>
   
 <br>
-<p align="right"><a href="#top">back to top</a></p>  
+<p align="right"><sub><a href="#top">back to top</a></sub></p> 
     
 ## License
 
